@@ -1,0 +1,122 @@
+body {
+    background-color: #f4f7f6;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-control-file {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background: #f8f8f8;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #004085;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #003f7f;
+}
+
+/* This is the color theme you've shown in the image */
+:root {
+    --main-color: #0056b3;
+    --secondary-color: #e9ecef;
+    --accent-color: #343a40;
+}
+
+/* Use the color theme */
+.container {
+    border-top: 5px solid var(--main-color);
+}
+
+h2 {
+    color: var(--accent-color);
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+/* Full-width navbar with specific color and hover animation */
+.navbar-full {
+    width: 100%;
+    background-color: #004085; /* Dark blue background */
+    border-bottom: none;
+    height: 100px; /* Increased height */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text */
+    transition: color 0.5s ease; /* Smooth transition for color change */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    padding: 0 15px;
+    margin-left: 10px;
+    transition: background-color 0.5s ease; /* Animation for background color */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #004085; /* Dark blue text */
+    background-color: #ffffff; /* White background */
+    border-radius: 5px; /* Rounded corners for the background */
+}
+
+/* Adjusting the height of the navbar items */
+.navbar-brand {
+    font-size: 1.5em; /* Larger brand text */
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* Toggler icon color */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+}
